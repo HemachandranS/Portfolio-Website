@@ -1,0 +1,136 @@
+.Project_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    position: relative;
+}
+
+
+.proj_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 8%;
+
+}
+
+.title{
+    margin-bottom: 8%;
+    
+
+}
+.proj_display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+    /* box-sizing: border-box; */
+    /* border: solid red; */
+    margin: 1.5%;
+    width: 70vw;
+    height: 38vh;
+    background-color: #263D17;
+}
+.p2{
+    background-color: #3A404B;
+}
+
+.proj{
+    display: flex;
+    height:100%;
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* box-sizing: border-box; */
+    /* margin: 5%; */
+    padding-left: 5%;
+    /* border: solid aliceblue; */
+}
+
+.proj_pic{
+    width: 30% !important;
+    height: 100%;
+}
+
+.proj_name{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 550;
+    width: 80%;
+    margin-bottom: 1%;
+    /* border: solid aliceblue; */
+}
+/* .proj.line{
+    width: 30%;
+} */
+.technologies{
+    font-size: 30px;
+}
+.proj_description{
+    font-size: 18px;
+    font-weight: 600;
+    height: 100%;
+    /* height: fit-content; */
+    padding: 1%;
+    /* border: solid aliceblue; */
+}
+
+.proj_line{
+    position: relative;
+    /* margin-top: 3vh !important; */
+    
+    margin-bottom: 3%;
+    width: 0%;
+    /* opacity: 0; */
+}
+
+.proj_line.expand{
+    position: relative;
+    
+    /* margin-top: 3vh; */
+    /* margin-bottom: 30%; */
+   
+    width: 50%;
+    
+    height: 2px;
+    
+    background-color: #cadefc;
+    color:#cadefc;
+    
+    animation: line3 2s ease-out;
+  }
+
+  @keyframes line3{
+    0%
+    {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+  } 

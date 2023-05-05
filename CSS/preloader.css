@@ -1,0 +1,144 @@
+.pre-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    position: fixed;
+    background-color:#46474B;
+    width: 100vw;
+    height: 100vh;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.44,.67,.83,.48);
+
+}
+
+.div1{
+    margin: 10vh;
+    /* margin-top: 20vh; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */ 
+     
+    
+} 
+.pre-logo{
+    left: 50%;
+    top: 2%;
+    animation: logo2 2s;
+
+}
+
+.name{
+    position: relative;
+    text-align: center;
+    /* left: 72vh; */
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: aliceblue; */
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 2vh;
+    /* width:42vh;  */
+    width: 100%;
+    animation: type 2s; 
+
+}
+.portfolio{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+   
+    font-size: 30px;
+    font-weight: 400;
+    animation: portfolio1 2s;
+    animation-fill-mode: forwards;
+
+   
+}
+
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes type{
+    0%
+    {
+        width:0;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.4;
+    }
+
+}
+
+.line1{
+    position: relative;
+    margin-bottom: 6vh;
+    /* width: 42vh; */
+    width: 100%;
+    /* transform: scaleX(0); */
+    height: 2px;
+    
+    background-color: #cadefc;
+    color:#cadefc;
+    /* transform-origin: bottom right; */
+    animation: line 2s ease-out;
+  }
+  
+   
+
+  @keyframes line{
+    0%
+    {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+  } 
+
+  @keyframes portfolio1{
+    0%{
+     opacity:0;
+     transform: translateY(15vh);
+
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+     opacity: 1;
+     transform: translateY(-1vh);
+    }
+  }
+  @keyframes logo2{
+    0%{
+     opacity:0;
+     transform: translateY(6vh);
+
+    }
+    50%{
+        opacity:0.3;
+    }
+    100%{
+     opacity: 1;
+     transform: translateY(0vh);
+    }
+  }

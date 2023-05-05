@@ -1,0 +1,211 @@
+.Work{
+    /* text-align: center; */
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* border:solid aliceblue;  */
+    /* height: fit-content !important; */
+    
+    
+}
+
+.w2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:solid aliceblue; */
+    /* background-color: #46474B; */
+}
+.work_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    /* margin-top: 3vh; */
+    margin-bottom: 8%;
+    /* border: solid aliceblue; */
+}
+
+.work_section{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content:flex-start;
+    align-items:flex-start ;
+    /* flex-flow: column wrap; */
+    /* border: solid aliceblue; */
+    width: 70vw;
+    height: 60vh;
+
+}
+
+.company_logo{
+    /* height: 70%;
+    width: 20vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    opacity: 0;
+    /* border: solid aliceblue; */
+   
+
+}
+.company_logo.up{
+    
+    animation-name: slideup4;
+    animation-duration: 3s;
+    opacity: 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: solid aliceblue; */
+    margin-left: 5%;
+    width: 80%;
+    height: 70%;
+}
+
+.comp_name{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+.role{
+    font-style: italic;
+    color: #cadefc;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5%;
+}
+.time{
+    font-style: italic;
+    color: #cadefc;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.description{
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+.work_head{
+    margin-bottom: 3vh;
+}
+.line{
+    position: relative;
+    /* margin-top: 3vh !important; */
+    
+    /* margin-bottom: 30%; */
+    width: 0%;
+    /* opacity: 0; */
+}
+
+.line.expand{
+    position: relative;
+    
+    /* margin-top: 3vh; */
+    /* margin-bottom: 30%; */
+   
+    width: 50%;
+    
+    height: 2px;
+    
+    background-color: #cadefc;
+    color:#cadefc;
+    
+    animation: line1 2s ease-out;
+  }
+
+  @keyframes line1{
+    0%
+    {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+  } 
+
+  @keyframes slideup4{
+    0%{
+     opacity:0;
+     transform: translateY(10vh);
+
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+     opacity: 1;
+     transform: translateY(0vh);
+    }
+  }
+
+  @media only screen and (max-width: 560px){
+    .Work{
+        /* height: fit-content !important; */
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+        /* width: 100vw; */
+    }
+    .comp_logo{
+        size: 6em;
+        margin-left: 5%;
+    }
+    .work_section{
+        flex-direction: column !important;
+        align-items: center !important; 
+        justify-content: center !important; 
+        margin-left: 1% !important;
+
+        /* border: solid aliceblue; */
+    }  
+    .work_title{
+        font-size: 40px;
+    }
+    .work_title{
+        margin-bottom: 20% !important;
+    }
+
+    .comp_name{
+        font-size: 40px;
+        margin-bottom: 4%;
+
+    }
+    .role{
+        margin-bottom: 3%;
+    }
+    .time{
+        margin-bottom: 3%;
+    }
+
+    
+    /* .company_logo{
+        height: auto;
+        width: auto;
+        
+    
+    } */
+}
+
