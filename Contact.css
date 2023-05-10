@@ -48,3 +48,16 @@
     background-color: #808080;
     text-align: center;
 } */
+
+@media  screen and (max-width: 560px)
+{
+    .contact_title{
+        font-size: 10px;
+        font-weight: 500;
+        margin-bottom: 3%;
+       
+    }
+    .contact_info{
+        font-size: 20px;
+    }
+}
